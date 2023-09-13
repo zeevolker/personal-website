@@ -62,6 +62,12 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+}
+
 /* navbar selesai */
 /* header */
 .header {
@@ -125,6 +131,26 @@ nav ul li a:hover {
     font-weight: 900;
     font-size: 9px;
     width: 160px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    z-index: 2;
+  }
+
+  .text .h {
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .text .p {
+    font-weight: 900;
+    font-size: 8px;
+    width: 150px;
   }
 }
 
@@ -228,6 +254,60 @@ nav ul li a:hover {
   .kotak-1 .btn-txt-1 {
     padding: 15px;
     font-size: 15px;
+    border: 1px solid white;
+  }
+
+  .kotak-1 .panah-1 {
+    display: none;
+  }
+
+  .kotak-1 .text-1 {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 50px;
+  }
+
+  .kotak-1 .text-1 .h-1 {
+    position: relative;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .kotak-1 .text-1 .p-1 {
+    position: relative;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 500px) {
+  .kotak-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  .kotak-1 img {
+    position: relative;
+    left: 0;
+    height: 165px;
+    width: 280px;
+    border-radius: 20px;
+  }
+
+  .kotak-1 .btn-1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    left: 0px;
+  }
+
+  .kotak-1 .btn-txt-1 {
+    padding: 15px;
+    font-size: 10px;
     border: 1px solid white;
   }
 
@@ -384,6 +464,60 @@ nav ul li a:hover {
     font-weight: 400;
   }
 }
+@media screen and (max-width: 500px) {
+  .kotak-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  .kotak-2 img {
+    position: relative;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .kotak-2 .btn-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    left: 0px;
+  }
+
+  .kotak-2 .btn-txt-2 {
+    padding: 15px;
+    font-size: 10px;
+    border: 1px solid white;
+  }
+
+  .kotak-2 .panah-2 {
+    display: none;
+  }
+
+  .kotak-2 .text-2 {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 50px;
+  }
+
+  .kotak-2 .text-2 .h-2 {
+    position: relative;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .kotak-2 .text-2 .p-2 {
+    position: relative;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
 
 /* konten 2 selesai */
 /* konten 3 */
@@ -512,6 +646,60 @@ nav ul li a:hover {
     font-weight: 400;
   }
 }
+@media screen and (max-width: 500px) {
+  .kotak-3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  .kotak-3 img {
+    position: relative;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .kotak-3 .btn-3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    left: 0px;
+  }
+
+  .kotak-3 .btn-txt-3 {
+    padding: 15px;
+    font-size: 10px;
+    border: 1px solid white;
+  }
+
+  .kotak-3 .panah-3 {
+    display: none;
+  }
+
+  .kotak-3 .text-3 {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 50px;
+  }
+
+  .kotak-3 .text-3 .h-3 {
+    position: relative;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .kotak-3 .text-3 .p-3 {
+    position: relative;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
 
 /* kontent 3 selesai */
 /* footer */
@@ -582,6 +770,15 @@ nav ul li a:hover {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer .text-footer .h-footer {
+    font-size: 10px;
+  }
+  .footer .copyright {
+    font-size: 7px;
+  }
 }
 
 /* footer selesai */
