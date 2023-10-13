@@ -1,784 +1,387 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600;700;800;900&display=swap");
 
 *,
 html {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-}
-/* navbar */
-nav {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  position: relative;
-  justify-content: right;
-  width: 100%;
-  height: 50px;
-  padding: 20px;
-  z-index: 2;
+  background-color: #0b0b0b;
 }
 
-nav ul {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-right: 80px;
-  gap: 2rem;
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-family: "M PLUS 1", sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-nav ul li a:hover {
-  background-color: white;
-  color: black;
-  transition: 0.3s ease-in;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 600px) {
-  nav {
+@media (min-width: 320px) and (max-width: 480px) {
+  /* navbar */
+  .container-navbar {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 50px;
   }
-
-  nav ul {
-    padding: 0%;
-  }
-
-  nav ul li a {
+  .container-navbar .wrapper {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 700;
     font-size: 10px;
+  }
+  .container-navbar .wrapper a {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 5px;
+  }
+  .container-navbar .wrapper a:hover {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  /* navbar selesai */
+  /* hero */
+  .container .box {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+  }
+  .container .box .box-img img {
+    width: 100%;
+  }
+  .container .box .box-deskripsi {
+    display: flex;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    cursor: default;
+  }
+  .container .box .box-deskripsi img {
+    width: 150px;
+    height: auto;
+  }
+  .container .box .box-deskripsi p {
+    font-family: "M PLUS 1", sans-serif;
+    margin: 10px 40px 10px 40px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  /* hero selesai */
+  /* konten journey */
+  .container-journey {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  .container-journey .box-3d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+  }
+  .container-journey .box-3d .wrapper {
+    position: relative;
+    width: 320px;
+    min-height: 200px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.05);
+    transform-style: preserve-3d;
+  }
+  .container-journey .box-3d .card-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    min-height: 200px;
+    transform: translatez(30px);
+  }
+  .container-journey .box-3d .card-img img {
+    position: absolute;
+    width: calc(100% - 40px);
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+  }
+  .container-journey .tombol {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+    right: 210px;
+    top: -5px;
+  }
+  .container-journey .tombol:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .container-journey .tombol .link {
+    text-decoration: none;
+  }
+  .container-journey .tombol h1 {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 10px;
     font-weight: 700;
   }
-}
-
-@media screen and (max-width: 500px) {
-  nav {
+  .container-journey .tombol h1:hover {
+    color: black;
+  }
+  .container-journey .card-deskripsi {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateZ(100px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+    top: 150px;
+    left: 100px;
+    max-width: 200px;
+    padding: 15px;
+  }
+  .container-journey .box-3d .card-deskripsi p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: white;
+    font-family: "M PLUS 1", sans-serif;
+    cursor: default;
+  }
+  /* konten journey selesai */
+  /* konten project */
+  .container-project {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding-top: 100px;
   }
-}
-
-/* navbar selesai */
-/* header */
-.header {
-  position: relative;
-  width: 100%;
-}
-
-.header img {
-  position: relative;
-  width: 100%;
-  bottom: 70px;
-  z-index: 1;
-}
-
-.text {
-  position: absolute;
-  top: 160px;
-  left: 140px;
-  z-index: 2;
-}
-
-.text .h {
-  font-family: "M PLUS 1", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
-  letter-spacing: 0.5;
-}
-
-.text .p {
-  font-family: "M PLUS 1", sans-serif;
-  font-weight: 900;
-  font-size: 15px;
-  width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-  .header {
+  .container-project .box-3d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
   }
-
-  .header img {
+  .container-project .box-3d .wrapper {
     position: relative;
-    bottom: 30px;
+    width: 240px;
+    min-height: 240px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.05);
+    transform-style: preserve-3d;
   }
-
-  .text {
+  .container-project .box-3d .card-img {
     position: absolute;
-    left: 60px;
-    top: 120px;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    min-height: 240px;
+    transform: translatez(30px);
   }
-
-  .text .h {
-    font-family: "M PLUS 1", sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-  }
-
-  .text .p {
-    font-family: "M PLUS 1", sans-serif;
-    font-weight: 900;
-    font-size: 9px;
-    width: 160px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .text {
+  .container-project .box-3d .card-img img {
     position: absolute;
-    left: 50px;
-    top: 100px;
-    z-index: 2;
+    width: calc(100% - 120px);
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
   }
-
-  .text .h {
-    font-weight: 900;
-    font-size: 18px;
+  .container-project .tombol {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+    left: 150px;
   }
-
-  .text .p {
-    font-weight: 900;
+  .container-project .tombol:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .container-project .tombol .link {
+    text-decoration: none;
+  }
+  .container-project .tombol h1 {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 10px;
+    font-weight: 700;
+  }
+  .container-project .tombol h1:hover {
+    color: black;
+  }
+  .container-project .card-deskripsi {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateZ(100px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+    top: 200px;
+    left: -20px;
+    max-width: 200px;
+    padding: 15px;
+  }
+  .container-project .box-3d .card-deskripsi p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: white;
+    font-family: "M PLUS 1", sans-serif;
+    cursor: default;
+  }
+  /* konten project selesai */
+  /* konten aboutme */
+  .container-aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .container-aboutme .box-3d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+  }
+  .container-aboutme .box-3d .wrapper {
+    position: relative;
+    width: 240px;
+    min-height: 240px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.05);
+    transform-style: preserve-3d;
+  }
+  .container-aboutme .box-3d .card-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 240px;
+    transform: translatez(30px);
+  }
+  .container-aboutme .box-3d .card-img img {
+    position: absolute;
+    width: calc(100% - 120px);
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+  }
+  .container-aboutme .tombol {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-left: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.5);
+    top: 200px;
+  }
+  .container-aboutme .tombol:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .container-aboutme .tombol .link {
+    text-decoration: none;
+  }
+  .container-aboutme .tombol h1 {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 10px;
+    font-weight: 700;
+  }
+  .container-aboutme .tombol h1:hover {
+    color: black;
+  }
+  /* konten aboutme selesai */
+  /* footer */
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    height: 140px;
+  }
+  .container-footer .footer .contactme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 5px;
+    padding-top: 30px;
+    cursor: default;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .container-footer .footer .icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .container-footer .footer .icon a {
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 20px;
+  }
+  .container-footer .footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .container-footer .footer .copyright h1 {
+    font-family: "M PLUS 1", sans-serif;
     font-size: 6px;
-    width: 130px;
+    color: whitesmoke;
+    cursor: default;
   }
+  /* footer selesai */
 }
-
-/* header selesai */
-/* konten 1 */
-
-.kotak-1 {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-.kotak-1 img {
-  position: relative;
-  left: 50px;
-  height: 300px;
-  width: 500px;
-  border-radius: 20px;
-}
-
-.kotak-1 .btn-1 {
-  left: 220px;
-  bottom: 80px;
-  position: absolute;
-}
-
-.kotak-1 .btn-txt-1 {
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
-  padding: 20px;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-}
-
-.kotak-1 .btn-txt-1:hover {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(2px);
-  border: 2px solid black;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.kotak-1 .panah-1 {
-  position: relative;
-  left: 150px;
-}
-
-.kotak-1 .text-1 {
-  position: relative;
-  color: white;
-  left: 230px;
-}
-
-.kotak-1 .text-1 .h-1 {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.kotak-1 .text-1 .p-1 {
-  position: relative;
-  align-items: right;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  width: 400px;
-}
-
-@media screen and (max-width: 600px) {
-  .kotak-1 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-1 img {
-    position: relative;
-    left: 0;
-    height: 200px;
-    width: 340px;
-    border-radius: 20px;
-  }
-
-  .kotak-1 .btn-1 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-1 .btn-txt-1 {
-    padding: 15px;
-    font-size: 15px;
-    border: 1px solid white;
-  }
-
-  .kotak-1 .panah-1 {
-    display: none;
-  }
-
-  .kotak-1 .text-1 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-1 .text-1 .h-1 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-1 .text-1 .p-1 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-@media screen and (max-width: 500px) {
-  .kotak-1 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-1 img {
-    position: relative;
-    left: 0;
-    height: 165px;
-    width: 280px;
-    border-radius: 20px;
-  }
-
-  .kotak-1 .btn-1 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-1 .btn-txt-1 {
-    padding: 15px;
-    font-size: 10px;
-    border: 1px solid white;
-  }
-
-  .kotak-1 .panah-1 {
-    display: none;
-  }
-
-  .kotak-1 .text-1 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-1 .text-1 .h-1 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-1 .text-1 .p-1 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-
-/* konten 1 selesai */
-/* konten 2 */
-
-.kotak-2 {
-  display: flex;
-  position: relative;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.kotak-2 img {
-  position: relative;
-  left: 800px;
-  height: 250px;
-  width: 250px;
-  border-radius: 20px;
-}
-
-.kotak-2 .btn-2 {
-  left: 850px;
-  bottom: 40px;
-  position: absolute;
-}
-
-.kotak-2 .btn-txt-2 {
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
-  padding: 20px;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-}
-
-.kotak-2 .btn-txt-2:hover {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(2px);
-  border: 2px solid black;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.kotak-2 .panah-2 {
-  position: relative;
-  left: 300px;
-}
-
-.kotak-2 .text-2 {
-  text-align: right;
-  position: relative;
-  color: white;
-  right: 350px;
-}
-
-.kotak-2 .text-2 .h-2 {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.kotak-2 .text-2 .p-2 {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  width: 400px;
-}
-
-@media screen and (max-width: 600px) {
-  .kotak-2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-2 img {
-    position: relative;
-    left: 0;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-  }
-
-  .kotak-2 .btn-2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-2 .btn-txt-2 {
-    padding: 15px;
-    font-size: 15px;
-    border: 1px solid white;
-  }
-
-  .kotak-2 .panah-2 {
-    display: none;
-  }
-
-  .kotak-2 .text-2 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-2 .text-2 .h-2 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-2 .text-2 .p-2 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-@media screen and (max-width: 500px) {
-  .kotak-2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-2 img {
-    position: relative;
-    left: 0;
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
-  }
-
-  .kotak-2 .btn-2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-2 .btn-txt-2 {
-    padding: 15px;
-    font-size: 10px;
-    border: 1px solid white;
-  }
-
-  .kotak-2 .panah-2 {
-    display: none;
-  }
-
-  .kotak-2 .text-2 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-2 .text-2 .h-2 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-2 .text-2 .p-2 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-
-/* konten 2 selesai */
-/* konten 3 */
-
-.kotak-3 {
-  display: flex;
-  position: relative;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.kotak-3 img {
-  position: relative;
-  left: 150px;
-  height: 250px;
-  width: 250px;
-  border-radius: 20px;
-}
-
-.kotak-3 .btn-3 {
-  left: 210px;
-  position: relative;
-  top: 40px;
-}
-
-.kotak-3 .btn-txt-3 {
-  font-family: "M PLUS 1", sans-serif;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-}
-
-.kotak-3 .btn-txt-3:hover {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(2px);
-  border: 2px solid rgb(255, 255, 255);
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.kotak-3 .panah-3 {
-  position: relative;
-  left: 250px;
-}
-
-.kotak-3 .text-3 {
-  text-align: left;
-  position: relative;
-  color: white;
-  left: 350px;
-}
-
-.kotak-3 .text-3 .h-3 {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.kotak-3 .text-3 .p-3 {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  width: 400px;
-}
-
-@media screen and (max-width: 600px) {
-  .kotak-3 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-3 img {
-    position: relative;
-    left: 0;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-  }
-
-  .kotak-3 .btn-3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-3 .btn-txt-3 {
-    padding: 15px;
-    font-size: 15px;
-    border: 1px solid white;
-  }
-
-  .kotak-3 .panah-3 {
-    display: none;
-  }
-
-  .kotak-3 .text-3 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-3 .text-3 .h-3 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-3 .text-3 .p-3 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-@media screen and (max-width: 500px) {
-  .kotak-3 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
-
-  .kotak-3 img {
-    position: relative;
-    left: 0;
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
-  }
-
-  .kotak-3 .btn-3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 20px;
-    left: 0px;
-  }
-
-  .kotak-3 .btn-txt-3 {
-    padding: 15px;
-    font-size: 10px;
-    border: 1px solid white;
-  }
-
-  .kotak-3 .panah-3 {
-    display: none;
-  }
-
-  .kotak-3 .text-3 {
-    text-align: center;
-    position: relative;
-    left: 0%;
-    margin-top: 50px;
-  }
-
-  .kotak-3 .text-3 .h-3 {
-    position: relative;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .kotak-3 .text-3 .p-3 {
-    position: relative;
-    font-size: 10px;
-    font-weight: 400;
-  }
-}
-
-/* kontent 3 selesai */
-/* footer */
-
-.footer {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.footer .text-footer {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer .text-footer .h-footer {
-  position: relative;
-  font-family: "M PLUS 1", sans-serif;
-  font-size: 15px;
-  font-weight: 900;
-  color: white;
-  letter-spacing: 1.5px;
-}
-
-.footer .icon {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer .icon .icon-ig {
-  position: relative;
-  right: 30px;
-  width: 20px;
-  height: 20px;
-}
-.footer .icon .icon-fb {
-  position: relative;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-}
-
-.footer .icon .icon-yt {
-  position: relative;
-  left: 10px;
-  width: 23px;
-  height: 20px;
-}
-.footer .icon .icon-gmail {
-  position: relative;
-  left: 30px;
-  width: 23px;
-  height: 19px;
-}
-
-.footer .copyright {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
-  color: white;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 10px;
-}
-
-@media screen and (max-width: 500px) {
-  .footer .text-footer .h-footer {
-    font-size: 10px;
-  }
-  .footer .copyright {
-    font-size: 7px;
-  }
-}
-
-/* footer selesai */
